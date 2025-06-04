@@ -1,40 +1,40 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fdfdfd;
-  margin: 0;
-  padding: 0;
-  color: #333;
+:root {
+  --primary-color: #0b2f6b;      /* Dark Blue base */
+  --accent1: #a25cdb;            /* Purple */
+  --accent2: #c9428e;            /* Pinkish */
+  --accent3: #d43b78;            /* Deep Pink */
+  --secondary-color: #1a1a2e;    /* Darker background */
+  --text-color: #e0e0e0;         /* Light grey text */
 }
 
-header {
-  background: #6a0dad;
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav {
+  background-color: var(--primary-color);
   color: white;
-  text-align: center;
-  padding: 20px;
 }
 
 nav a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
+  color: var(--accent1);
 }
 
-main {
-  padding: 40px;
+nav a:hover {
+  color: var(--accent3);
+}
+
+h2 {
+  color: var(--accent2);
 }
 
 footer {
-  background: #eee;
-  color: #444;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
-.profile-img {
-  width: 250px;
-  border-radius: 10px;
-  margin-right: 30px;
+  background-color: var(--primary-color);
+  color: var(--accent1);
 }
 
 .about-section {
